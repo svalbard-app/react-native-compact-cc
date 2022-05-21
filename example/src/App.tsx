@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    paddingHorizontal: 15,
   },
   box: {
     marginTop: 5,

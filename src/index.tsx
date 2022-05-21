@@ -388,7 +388,6 @@ export const CompactCcView = (props: CompactCcProps) => {
 const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
-    paddingHorizontal: 15,
   },
   cardsContainer: {
     flexDirection: 'row',
