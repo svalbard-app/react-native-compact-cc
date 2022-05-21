@@ -97,9 +97,9 @@ export const CompactCcView = (props: CompactCcProps) => {
 
   const isAcceptedCardRef = useRef(isAcceptedCard);
   isAcceptedCardRef.current = isAcceptedCard;
-  const refInputFullNumber = useRef<TextInput>();
-  const refInputDate = useRef<TextInput>();
-  const refInputCVC = useRef<TextInput>();
+  const refInputFullNumber = useRef<TextInput>(null);
+  const refInputDate = useRef<TextInput>(null);
+  const refInputCVC = useRef<TextInput>(null);
 
   const toggleCCNumber = () => {
     setShowFullCCNumber(!showFullCCNumber);
@@ -279,7 +279,6 @@ export const CompactCcView = (props: CompactCcProps) => {
             ]}
             {...inputProps('number')}
             keyboardType="numeric"
-            autoCompleteType="cc-number"
             ref={refInputFullNumber}
             placeholderTextColor={inputProps('number').placeholderColor}
             maxLength={50}
@@ -334,7 +333,6 @@ export const CompactCcView = (props: CompactCcProps) => {
             ]}
             {...inputProps('expiry')}
             keyboardType="numeric"
-            autoCompleteType="cc-exp"
             ref={refInputDate}
             placeholderTextColor={inputProps('expiry').placeholderColor}
             maxLength={5}
@@ -356,7 +354,6 @@ export const CompactCcView = (props: CompactCcProps) => {
             ]}
             {...inputProps('cvc')}
             keyboardType="numeric"
-            autoCompleteType="cc-csc"
             ref={refInputCVC}
             placeholderTextColor={inputProps('cvc').placeholderColor}
             maxLength={4}
