@@ -10,6 +10,10 @@ React Native Compact Credit Card provides a form and utilities for credit card d
 * Fully keyboard-navigable form
 * Configured to accept customizable styles to suit your App
 
+<p align="center">
+<img src="https://github.com/svalbard-app/react-native-compact-cc/blob/main/screenshots/cc-form-animation2.gif?raw=true" width=200/>
+</p>
+
 ## Installation
 
 ```sh
@@ -25,7 +29,7 @@ yarn add react-native-compact-cc
 ## Usage
 
 ```js
-import { CompactCcView, CardForm } from 'react-native-compact-cc';
+import { CompactCcView } from 'react-native-compact-cc';
 
 // ...
 
@@ -35,13 +39,13 @@ import { CompactCcView, CardForm } from 'react-native-compact-cc';
 ```
 
 ```js
-const handleCardChange = (form: CardForm) => {
+const handleCardChange = (form) => {
     console.log(form);
 };
 
 /* Console output:
 {
-  name: "John Snow",
+  name: "Jon Snow",
   number: "4242 4242 4242 4242",
   type: "visa",
   expiry: "05/29",
