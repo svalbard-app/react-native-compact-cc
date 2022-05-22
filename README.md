@@ -11,7 +11,7 @@ React Native Compact Credit Card provides a form and utilities for credit card d
 * Configured to accept customizable styles to suit your App
 
 <p align="center">
-<img src="https://github.com/svalbard-app/react-native-compact-cc/blob/main/screenshots/cc-form-animation2.gif?raw=true" width=200/>
+<img src="https://github.com/svalbard-app/react-native-compact-cc/blob/main/screenshots/cc-form-animation1.gif?raw=true" width=250/>
 </p>
 
 ## Installation
@@ -61,7 +61,7 @@ const handleCardChange = (form) => {
 | --- | --- | --- |
 |onChange | PropTypes.func | Receives a `CardForm` object every time the form changes |
 |form | PropTypes.objectOf(CardForm) | You can set the default values of the Credit-Card form, such as the cardholder's name or any other field |
-|acceptedCards | PropTypes.arrayOf(CardType) | Credit card list that will be accepted only |
+|acceptedCards | PropTypes.arrayOf(CardType) | Credit card list that will be accepted only. Available values: <br>`['american-express', 'diners-club', 'mastercard', 'cirrus', 'maestro', 'discover', 'jcb', 'visa', 'unionpay']` |
 |invalidAcceptedCardText | PropTypes.string | Text to be displayed when typing a credit card that is not accepted. Defaults to: `"You can only enter one of the accepted card types."` |
 |placeholders | PropTypes.objectOf(CardFields) | Defaults to: <br/>`{ name: 'Name on card', number: '•••• •••• •••• ••••', expiry: 'MM/YY', cvc: 'CVC' }` |
 |placeholderColor | PropTypes.string | Color that will be applied for text input placeholder |
